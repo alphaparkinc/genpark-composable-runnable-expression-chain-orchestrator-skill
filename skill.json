@@ -1,0 +1,38 @@
+{
+  "name": "genpark-composable-runnable-expression-chain-orchestrator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Composable runnable expression language orchestrator constructing declarative streaming LLM execution graphs.",
+  "author": "genpark",
+  "category": "chain-orchestrator",
+  "tags": [
+    "langchain",
+    "lcel",
+    "runnable-graph",
+    "streaming-chain",
+    "declarative-pipeline"
+  ],
+  "inputs": {
+    "input_query": {
+      "type": "string"
+    },
+    "streaming_enabled": {
+      "type": "boolean"
+    }
+  },
+  "outputs": {
+    "chain_execution_id": {
+      "type": "string"
+    },
+    "chain_nodes_count": {
+      "type": "integer"
+    },
+    "streaming_first_chunk_latency_ms": {
+      "type": "integer"
+    },
+    "output_manifest_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
